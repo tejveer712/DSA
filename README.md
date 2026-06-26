@@ -6,6 +6,7 @@ Data Structures and Algorithms practice
 ## Array
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/tejveer712/DSA/tree/master/0053-maximum-subarray) |
 | [0128-longest-consecutive-sequence](https://github.com/tejveer712/DSA/tree/master/0128-longest-consecutive-sequence) |
 ## Hash Table
 |  |
@@ -15,4 +16,12 @@ Data Structures and Algorithms practice
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/tejveer712/DSA/tree/master/0128-longest-consecutive-sequence) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/tejveer712/DSA/tree/master/0053-maximum-subarray) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/tejveer712/DSA/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
