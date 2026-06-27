@@ -8,6 +8,7 @@ Data Structures and Algorithms practice
 | ------- |
 | [0053-maximum-subarray](https://github.com/tejveer712/DSA/tree/master/0053-maximum-subarray) |
 | [0128-longest-consecutive-sequence](https://github.com/tejveer712/DSA/tree/master/0128-longest-consecutive-sequence) |
+| [0704-binary-search](https://github.com/tejveer712/DSA/tree/master/0704-binary-search) |
 ## Hash Table
 |  |
 | ------- |
@@ -24,4 +25,8 @@ Data Structures and Algorithms practice
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/tejveer712/DSA/tree/master/0053-maximum-subarray) |
+## Binary Search
+|  |
+| ------- |
+| [0704-binary-search](https://github.com/tejveer712/DSA/tree/master/0704-binary-search) |
 <!---LeetCode Topics End-->
