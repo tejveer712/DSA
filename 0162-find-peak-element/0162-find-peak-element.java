@@ -33,3 +33,12 @@ class Solution {
     }
         
 }
+
+
+// Binary search shrinks the search space while always keeping
+// at least one peak inside it.
+//
+// When low == high, only one index remains, and that index
+// is guaranteed to be a peak.
+//
+// Therefore simply return low (or high).
