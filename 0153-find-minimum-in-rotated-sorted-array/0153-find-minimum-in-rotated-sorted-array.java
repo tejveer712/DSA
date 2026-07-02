@@ -25,3 +25,18 @@ class Solution {
     }
 }
 
+/*
+Whenever you see a rotated sorted array:
+
+Compare nums[mid] with nums[high].
+If nums[mid] > nums[high]:
+mid is in the left sorted part.
+Minimum is to the right.
+low = mid + 1.
+Otherwise:
+mid is in the right sorted part or is the minimum.
+Keep mid in the search space.
+high = mid.
+When the loop ends, low == high, and that index is the minimum.
+
+*/
