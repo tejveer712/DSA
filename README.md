@@ -6,6 +6,7 @@ Data Structures and Algorithms practice
 ## Array
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/tejveer712/DSA/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/tejveer712/DSA/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/tejveer712/DSA/tree/master/0035-search-insert-position) |
 | [0053-maximum-subarray](https://github.com/tejveer712/DSA/tree/master/0053-maximum-subarray) |
@@ -33,6 +34,7 @@ Data Structures and Algorithms practice
 ## Binary Search
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/tejveer712/DSA/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/tejveer712/DSA/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/tejveer712/DSA/tree/master/0035-search-insert-position) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/tejveer712/DSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
