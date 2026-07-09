@@ -24,6 +24,7 @@ Data Structures and Algorithms practice
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/tejveer712/DSA/tree/master/0128-longest-consecutive-sequence) |
+| [0242-valid-anagram](https://github.com/tejveer712/DSA/tree/master/0242-valid-anagram) |
 ## Union-Find
 |  |
 | ------- |
@@ -51,4 +52,12 @@ Data Structures and Algorithms practice
 | [0875-koko-eating-bananas](https://github.com/tejveer712/DSA/tree/master/0875-koko-eating-bananas) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/tejveer712/DSA/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [1539-kth-missing-positive-number](https://github.com/tejveer712/DSA/tree/master/1539-kth-missing-positive-number) |
+## String
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/tejveer712/DSA/tree/master/0242-valid-anagram) |
+## Sorting
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/tejveer712/DSA/tree/master/0242-valid-anagram) |
 <!---LeetCode Topics End-->
