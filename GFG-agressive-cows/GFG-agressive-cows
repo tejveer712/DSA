@@ -1,0 +1,169 @@
+class Solution {
+
+    /*
+     * Helper Function
+     * ----------------
+     * Returns true if it is possible to place 'k' cows such that
+     * the minimum distance between any two cows is at least 'mid'.
+     *
+     * Greedy Idea:
+     * Always place the next cow in the leftmost valid stall.
+     * This leaves maximum space for the remaining cows.
+     *
+     * Time Complexity: O(n)
+     */
+    boolean canFit(int[] arr, int k, int mid) {
+
+        // Place the first cow in the first stall.
+        int lastPlaced = arr[0];
+        int cowsPlaced = 1;
+
+        for (int i = 1; i < arr.length; i++) {
+
+            // Distance from the last placed cow.
+            int dist = arr[i] - lastPlaced;
+
+            // Place a cow if the required minimum distance is maintained.
+            if (dist >= mid) {
+                cowsPlaced++;
+                lastPlaced = arr[i];
+            }
+
+            // Successfully placed all cows.
+            if (cowsPlaced >= k) {
+                return true;
+            }
+        }
+
+        // Could not place all cows.
+        return false;
+    }
+
+    public int aggressiveCows(int[] arr, int k) {
+
+        // Sort stalls so that cows can be placed greedily from left to right.
+        Arrays.sort(arr);
+
+        /*
+         * Binary Search on the Answer
+         *
+         * We are searching for the maximum possible minimum distance,
+         * NOT an index in the array.
+         */
+
+        // Minimum possible answer.
+        int low = 1;
+
+        // Maximum possible answer.
+        int high = arr[arr.length - 1] - arr[0];
+
+        while (low <= high) {
+
+            int mid = low + (high - low) / 2;
+
+            // If this distance is feasible,
+            // try to increase the minimum distance.
+            if (canFit(arr, k, mid)) {
+                low = mid + 1;
+            }
+            // Otherwise reduce the distance.
+            else {
+                high = mid - 1;
+            }
+        }
+
+        // 'high' is the last feasible (maximum valid) distance.
+        return high;
+    }
+
+    /*
+     * ===================== REVISION NOTES =====================
+     *
+     * Pattern:
+     * Binary Search on Answer
+     *
+     * ----------------------------------------------------------
+     * What is the answer being searched?
+     *
+     * -> Maximum possible minimum distance between any two cows.
+     *
+     * ----------------------------------------------------------
+     * Helper Function
+     *
+     * Question:
+     * Can we place all k cows while keeping at least 'mid'
+     * distance between every two cows?
+     *
+     * Returns:
+     * true  -> feasible
+     * false -> not feasible
+     *
+     * ----------------------------------------------------------
+     * Why Greedy Works?
+     *
+     * Always place the next cow in the leftmost valid stall.
+     *
+     * Reason:
+     * Earlier placement leaves more space for the remaining cows.
+     * If this greedy placement fails, any later placement will
+     * also fail.
+     *
+     * ----------------------------------------------------------
+     * Monotonic Property
+     *
+     * Distance:
+     * 1 2 3 4 5 6
+     * Y Y Y N N N
+     *
+     * Once a distance becomes impossible,
+     * every larger distance is also impossible.
+     *
+     * This monotonicity makes Binary Search possible.
+     *
+     * ----------------------------------------------------------
+     * Binary Search Logic
+     *
+     * if(canFit(mid))
+     *     low = mid + 1;   // Try a larger answer.
+     * else
+     *     high = mid - 1;  // Reduce the answer.
+     *
+     * ----------------------------------------------------------
+     * Why return 'high'?
+     *
+     * Loop ends when:
+     *
+     * low  -> First impossible answer
+     * high -> Last possible answer
+     *
+     * Hence return high.
+     *
+     * ----------------------------------------------------------
+     * Complexity
+     *
+     * Sorting      : O(n log n)
+     * Helper       : O(n)
+     * Binary Search: O(log(maxDistance))
+     *
+     * Overall:
+     * O(n log n + n log(maxDistance))
+     *
+     * Space:
+     * O(1)
+     *
+     * ----------------------------------------------------------
+     * Recognition Clues
+     *
+     * Look for phrases like:
+     * - Maximize the minimum
+     * - Minimize the maximum
+     * - Largest feasible value
+     * - Smallest feasible value
+     *
+     * Ask yourself:
+     * "Can I binary search on the answer and write a helper
+     * that checks whether a candidate answer is possible?"
+     *
+     * ==========================================================
+     */
+}
