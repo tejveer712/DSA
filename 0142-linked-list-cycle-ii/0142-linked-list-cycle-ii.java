@@ -24,14 +24,14 @@ public class Solution {
 
             // Cycle detected
             if (slow == fast) {
-
+                slow = head;
                 // Phase 2: Find the starting node of the cycle
-                while (slow != temp) {
+                while (slow != fast) {
                     slow = slow.next;
-                    temp = temp.next;
+                    fast = fast.next;
                 }
 
-                return temp;
+                return slow;
             }
         }
 
